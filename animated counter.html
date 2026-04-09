@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .counter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+    </style>
+</head>
+<body>
+  <div class="row text-center mt-4">
+
+  <div class="col-md-4">
+    <h2 class="counter" data-target="10">0</h2>
+    <p>Projects Completed</p>
+  </div>
+
+  <div class="col-md-4">
+    <h2 class="counter" data-target="5">0</h2>
+    <p>Skills Learned</p>
+  </div>
+
+  <div class="col-md-4">
+    <h2 class="counter" data-target="3">0</h2>
+    <p>Certifications</p>
+  </div>
+
+</div>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    counter.innerText = '0';
+
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+
+      const increment = target / 100;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCounter();
+  });
+</script>
+</body>
+</html>

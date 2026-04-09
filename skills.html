@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Sivuse Soko</title>
+  <link rel="icon" href="monkey.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="portfolio.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sivuse Soko</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-2" href="index.html#contact">Contact Me</a>
+          </li>
+
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-outline-light ms-2">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="text-center py-5 mt-3">
+    <div class="container">
+      <h1 class="fw-bold">My Skills</h1>
+      <p class="lead">Here are my technical and professional skills</p>
+    </div>
+  </section>
+
+  <section class="container my-5 p-4">
+
+    <h3 class="mb-4">💻 Programming Skills</h3>
+
+
+    <p>HTML</p>
+    <div class="progress mb-3">
+
+      <div class="progress-bar bg-success" data-target="90">0%</div>
+    </div>
+
+
+    <p>CSS</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-info" data-target="85">0%</div>
+    </div>
+
+
+    <p>JavaScript</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-warning" data-target="70">0%</div>
+    </div>
+
+    <p>SQL</p>
+    <div class="progress mb-4">
+      <div class="progress-bar bg-danger" data-target="87">0%</div>
+    </div>
+
+    <p>Python</p>
+    <div class="progress mb-4">
+      <div class="progress-bar " data-target="85">0%</div>
+    </div>
+    <h3 class="mb-4 mt-5">🛠 Tools & Technologies</h3>
+
+    <div class="row">
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center"> 
+          <h5>Bootstrap</h5>
+          <p>Responsive design and UI development</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center">
+          <h5>Git & GitHub</h5>
+          <p>Version control and collaboration</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center">
+          <h5>Database Design</h5>
+          <p>MySQL, ER diagrams, normalization</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 text-center">
+          <h5>Custom Tkinter</h5>
+          <p>Responsive design and UI development in Python applications</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="mb-4 mt-5">🎯 Soft Skills</h3>
+
+    <div class="row text-center">
+      <div class="col-md-3">✔ Teamwork</div>
+      <div class="col-md-3">✔ Problem Solving</div>
+      <div class="col-md-3">✔ Communication</div>
+      <div class="col-md-3">✔ Time Management</div>
+    </div>
+
+  </section>
+
+  <footer class="text-center py-3">
+    <p>© 2026 Sivuse Soko</p>
+  </footer>
+    <div class="floating-social">
+
+  <div class="social-toggle" onclick="toggleMenu()">
+    <i class="fas fa-share-alt"></i>
+  </div>
+
+  <div class="social-icons" id="socialMenu">
+    <p>Connect</p>
+
+    <a href="https://github.com/sivumister" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/sivuse-soko-210502338/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:ssivuse@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="https://facebook.com/sivuse.soko" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/sivs.zw" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    
+  </div>
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js">
+  </script>
+  <script>
+const bars = document.querySelectorAll(".progress-bar");
+
+bars.forEach(bar => {
+    let target = +bar.getAttribute("data-target");
+    let count = 0;
+
+    let speed = 50; // 🔥 CHANGE THIS VALUE TO CONTROL SPEED
+
+    let update = () => {
+        if (count < target) {
+            count++;
+            bar.style.width = count + "%";
+            bar.innerText = count + "%";
+            setTimeout(update, speed);
+        } else {
+            bar.innerText = target + "%";
+        }
+    };
+
+    update();
+});
+    </script>
+</body>
+</html>
