@@ -1,88 +1,90 @@
-    body {
-      background: linear-gradient(135deg, #0d6efd, #6ea8fe);
-      color: white;
-      min-height: 100vh;
-    }
+body {
+  background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+  color: white;
+  min-height: 100vh;
+}
 
-    section, .container {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      padding: 20px;
-    }
+section, .container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
 
-    body.dark-mode {
-      background: linear-gradient(135deg, #000428, #004e92);
-      color: white;
-    }
+body.dark-mode {
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: white;
+}
 
-    .dark-mode section,
-    .dark-mode .container {
-      background: rgba(0, 0, 0, 0.4);
-    }
+.dark-mode section,
+.dark-mode .container {
+  background: rgba(0, 0, 0, 0.4);
+}
 
-    .navbar {
-      background: rgba(0, 0, 0, 0.6) !important;
-      backdrop-filter: blur(10px);
-    }
+.navbar {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+}
 
-    .dark-mode .btn-outline-dark {
-      color: white;
-      border-color: white;
-    }
+.dark-mode .btn-outline-dark {
+  color: white;
+  border-color: white;
+}
 
-    .dark-mode .btn-outline-dark:hover {
-      background-color: white;
-      color: black;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-    }
-  
-    .dark-mode input,
-    .dark-mode textarea {
-      background-color: #1e1e1e;
-      color: white;
-      border: 1px solid #555;
-    }
+.dark-mode .btn-outline-dark:hover {
+  background-color: white;
+  color: black;
+}
 
-    .dark-mode input::placeholder,
-    .dark-mode textarea::placeholder {
-      color: #bbb;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-        section, .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      color: white;
-    }
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #555;
+}
 
-    .dark-mode section,
-    .dark-mode .card {
-      background: rgba(0, 0, 0, 0.4);
-    }
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+  color: #bbb;
+}
 
-    .progress {
-      height: 20px;
-      border-radius: 10px;
-    }
-        .card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      color: white;
-    }
-        .card img {
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+section, .card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
 
-    .dark-mode .card {
-      background: rgba(0, 0, 0, 0.4);
-    }
+.dark-mode section,
+.dark-mode .card {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.progress {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: white;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dark-mode .card {
+  background: rgba(0, 0, 0, 0.4);
+}
 
 .contact-container {
   position: relative;
@@ -117,7 +119,6 @@
   transform: scale(1.1);
 }
 
-
 .social-icons {
   position: absolute;
   bottom: 70px;
@@ -134,20 +135,17 @@
   transition: 0.3s ease;
 }
 
-
 .social-icons.active {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-
 .social-icons p {
   color: white;
   font-size: 14px;
   margin-bottom: 8px;
 }
-
 
 .social-icons a {
   color: white;
@@ -160,6 +158,7 @@
   color: #0d6efd;
   transform: scale(1.2);
 }
+
 .counter {
   font-size: 2.5rem;
   font-weight: bold;
@@ -170,4 +169,78 @@
   margin-top: 5px;
   font-size: 0.9rem;
   opacity: 0.7;
+}
+
+/* Automatically generated GitHub project cards */
+#projects {
+  scroll-margin-top: 24px;
+}
+
+.project-profile-link {
+  color: #fff;
+  text-underline-offset: 3px;
+}
+
+.project-profile-link:hover {
+  color: #e5f0ff;
+}
+
+.portfolio-project-card {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(4, 28, 72, 0.24);
+  box-shadow: 0 12px 25px rgba(0, 25, 72, 0.1);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.portfolio-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 25, 72, 0.24);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-mode .portfolio-project-card {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.project-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.project-language,
+.project-tag {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.79rem;
+}
+
+.project-title {
+  overflow-wrap: anywhere;
+}
+
+.project-description {
+  opacity: 0.9;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-tags {
+  min-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-project-card { transition: none; }
+  .portfolio-project-card:hover { transform: none; }
 }
